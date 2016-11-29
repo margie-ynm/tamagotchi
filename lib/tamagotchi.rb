@@ -15,4 +15,18 @@ class Tamagotchi
     @food_level > 0
   end
 
+  define_method(:feed) do 
+    @food_level = 10
+  end
+
+  define_method(:time_passes) do |time_passed|
+    @food_level -= time_passed
+    @sleep_level -= time_passed
+    @activity_level -= time_passed
+  end
+
+  define_method(:play) do
+    @activity_level = 10
+  end
+
 end
