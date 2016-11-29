@@ -3,20 +3,16 @@ class Tamagotchi
     @name = name
     @food_level = 10
     @sleep_level = 10
-    @activity = 10
+    @activity_level = 10
   end
 
-  define_method(:name) do
-    @name
-  end
-  define_method(:food_level) do
-    @food_level
-  end
-  define_method(:sleep_level) do
-    @food_level
-  end
-  define_method(:activity_level) do
-    @food_level
+  define_method(:name)           { @name }
+  define_method(:food_level)     { @food_level }
+  define_method(:sleep_level)    { @sleep_level }
+  define_method(:activity_level) { @activity_level }
+
+  define_method(:is_alive?) do
+    @food_level > 0
   end
 
 end
