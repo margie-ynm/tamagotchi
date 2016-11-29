@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./lib/project')
+require('./lib/tamagotchi')
 also_reload('lib/**/*.rb')
 
 
