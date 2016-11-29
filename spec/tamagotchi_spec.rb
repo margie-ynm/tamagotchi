@@ -1,5 +1,5 @@
 require('rspec')
-require('project')
+require('tamagotchi')
 
 describe('Tamagotchi') do
   describe("#initialize") do
